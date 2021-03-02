@@ -13,3 +13,14 @@ var decompressRLElist = function(nums) {
  }   
     return res
 };
+
+
+//Best Optimsed Code:
+
+// var decompressRLElist = function(nums) {
+//     let res = []
+//     for(let i = 0; i<nums.length; i+=2){
+//          res.push(...new Array(nums[i]).fill(nums[i+1]))
+//  }   
+//     return res
+// };
