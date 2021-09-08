@@ -1,3 +1,4 @@
+[Discussion Post (created on 8/8/2021 at 1:57)](https://leetcode.com/problems/find-anagram-mappings/discuss/1451549/JavaScript-Runtime%3A-56-ms-faster-than-100.00-of-Js-online-submissions)  
 <h2>760. Find Anagram Mappings</h2><h3>Easy</h3><hr><div><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code> where <code>nums2</code> is <strong>an anagram</strong> of <code>nums1</code>. Both arrays may contain duplicates.</p>
 
 <p>Return <em>an index mapping array </em><code>mapping</code><em> from </em><code>nums1</code><em> to </em><code>nums2</code><em> where </em><code>mapping[i] = j</code><em> means the </em><code>i<sup>th</sup></code><em> element in </em><code>nums1</code><em> appears in </em><code>nums2</code><em> at index </em><code>j</code>. If there are multiple answers, return <strong>any of them</strong>.</p>
