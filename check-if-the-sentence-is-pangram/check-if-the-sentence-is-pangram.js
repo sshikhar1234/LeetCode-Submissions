@@ -3,6 +3,10 @@
  * @return {boolean}
  */
 var checkIfPangram = function(sentence) {
+
+//     One line solution:
+//     return new Set(sentence).size == 26
+    
     var charArray = sentence.split('')
     var hash = new Map()
     for(var i = 0;i<charArray.length;i++){
