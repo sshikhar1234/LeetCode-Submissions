@@ -5,6 +5,21 @@
  */
 
 var twoSum = function(nums, target) {
+ 
+ //Optimal solution   
+//     for(var i = 0; i<nums.length;i++){
+//         var targetPt = target - nums[i]
+//         if(hash.has(targetPt)){
+//         var j = hash.get(targetPt)
+//         if(i!=j){
+//             return [i,j]            
+//         }
+//         }else {
+//             hash.set(nums[i],i)
+//         }
+//     }
+//     return null
+    
     var hash = new Map();
     
     for(var i = 0; i<nums.length;i++){
