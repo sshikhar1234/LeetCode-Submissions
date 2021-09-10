@@ -3,6 +3,24 @@
  * @return {number}
  */
 var maxArea = function(heights) {
+    //Optimal Solution
+//     var p1 = 0
+//     var p2 = heights.length-1
+//     var maxArea = 0
+//     while(p1 < p2){
+//         const height = Math.min(heights[p1], heights[p2])     
+//         const width = p2-p1
+//         const area = width*height
+//     if(area>maxArea){
+//           maxArea = area
+//       }
+//     if(heights[p1]<=heights[p2]){
+//         p1++
+//     }else{
+//         p2--
+//     }
+//     }
+//     return maxArea
     var p1 = 0
     var p2 = heights.length-1
     var maxArea = 0
