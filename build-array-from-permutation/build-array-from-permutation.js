@@ -3,8 +3,8 @@
  * @return {number[]}
  */
 var buildArray = function(nums) {
-  var res = []
-  for(var i = 0;i<nums.length;i++){
+  let res = []
+  for(let i = 0;i<nums.length;i++){
       res.push(nums[nums[i]])
   }
     return res
