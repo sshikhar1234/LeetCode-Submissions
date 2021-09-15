@@ -22,8 +22,7 @@ var uniqueMorseRepresentations = function(words) {
 //     for(let p1 = 0;p1<words.length;p1++){
 //         let tempStr = ""
 //         for(let p2 = 0;p2<words[p1].length;p2++){
-//             let c = words[p1]
-//             tempStr +=  morseCode[c.charAt(p2)]
+//             tempStr +=  morseCode[words[p1].charAt(p2)]
 //         }
 //         data.add(tempStr)            
 //     }
