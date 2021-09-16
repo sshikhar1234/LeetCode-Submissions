@@ -1,10 +1,12 @@
 class Solution {
     public String sortSentence(String s) {
         String res = "";
-        String[] splited = s.split("\\s+");
+        String[] splited = s.split(" ");
         String[] newStr = new String[splited.length];
+        StringBuilder sb = new StringBuilder();
         for (String currentStr : splited) {
         char[] chars = currentStr.toCharArray();
+            // int temp = (int) currentStr.charAt(currentStr.length -1)
             for(char c : chars){
                 if(Character.isDigit(c)){
                     int temp = Integer.parseInt(String.valueOf(c));
