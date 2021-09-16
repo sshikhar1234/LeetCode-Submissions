@@ -3,6 +3,14 @@
  * @return {number[][]}
  */
 var flipAndInvertImage = function(image) {
+    
+//      Optimal Solution
+//     for(let i =0;i<image.length;i++){
+//         image[i] = image[i].reverse()
+//         const oneRow = image[i]
+//         image[i] = oneRow.map(v => v===0?1:0)
+//     }    
+//     return image
     let res = []
     for(let row of image){
         let resRow = []
