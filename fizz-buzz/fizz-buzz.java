@@ -2,17 +2,19 @@ class Solution {
     public List<String> fizzBuzz(int n) {
         List<String> list = new ArrayList<String>();
         for(int i = 1;i<=n;i++){
+        StringBuilder sb = new StringBuilder();
             if((i%3==0) && (i%5==0)){
-                list.add("FizzBuzz");
+                sb.append("FizzBuzz");
             }
             else if(i%3 == 0){                
-                list.add("Fizz");
+                sb.append("Fizz");
             }
             else if(i%5 == 0){                
-                list.add("Buzz");
+                sb.append("Buzz");
             } else{
-                list.add(String.valueOf(i));
+                sb.append(String.valueOf(i));
             }
+            list.add(sb.toString());
         }
         return list;
     }
