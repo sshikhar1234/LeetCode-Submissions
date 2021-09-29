@@ -1,15 +1,13 @@
 class Solution {
     public int firstUniqChar(String s) {
-        HashMap<Character, Integer> dict = new HashMap<Character, Integer>();
-        int lastIndex = 0;
+        int[] arr = new int[26];
         for(int i =0;i<s.length();i++){
-            char current = s.charAt(i);
-                 dict.put(current, dict.getOrDefault(current, 0) + 1);
+            int current = s.charAt(i) -'a';
+            arr[current]++;
         }
          for (int i = 0; i < s.length(); i++) {
-            System.out.println("currentInd: "+i);
-            System.out.println("val: "+dict.get(s.charAt(i)));
-            if (dict.get(s.charAt(i)) == 1) 
+             int ind = s.charAt(i) - 'a';
+            if (arr[ind] == 1) 
                 return i;
         }
         return -1;
