@@ -20,23 +20,21 @@ class Solution {
         return root;
     }
     private void dfs(TreeNode node){
-        if(node!=null){
-            if(node.left !=null && node.right !=null){
-                TreeNode temp = node.left;
-                node.left = node.right;
-                node.right = temp;
+        if(node.left !=null && node.right !=null){
+            TreeNode temp = node.left;
+            node.left = node.right;
+            node.right = temp;
             dfs(node.left);
             dfs(node.right);
-
-            }else if(node.left !=null && node.right ==null){
-                node.right = node.left;
-                node.left = null;
-            dfs(node.right);
-            }else if(node.left ==null && node.right !=null){
-                node.left = node.right;
-                node.right = null;
+        }else if(node.left ==null && node.right !=null){
+            node.left = node.right;
+            node.right = null;
             dfs(node.left);
-            }
+        }else if(node.left !=null && node.right ==null){
+            node.right = node.left;
+            node.left = null;
+            dfs(node.right);
         }
+        
     }
 }
